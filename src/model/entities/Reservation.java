@@ -6,7 +6,7 @@ import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
 public class Reservation {
-	
+	// res
 	private Integer roomNumber;
 	private Date checkIn;
 	private Date checkOut;
