@@ -1,6 +1,6 @@
 package model.exceptions;
 
-public class DomainException extends Exception{
+public class DomainException extends RuntimeException{
 	private static final long serialVersionUID = 1L;
 	
 	/*É feito um construtor que recebe String como argumento, vai passar para o construtor da super classe

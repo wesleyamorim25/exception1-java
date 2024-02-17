@@ -45,6 +45,10 @@ public class Program {
 		catch (DomainException e) {
 			System.out.println("Error in reservation: " + e.getMessage());
 		}
+		// Esse tipo de Exception é Generico, pode ser qualquer exceção que será tratada da mesma forma, estamos usando o upcasting
+		catch (RuntimeException e ) {
+			System.out.println("Unexpected error");
+		}
 		
 		
 		sc.close();	

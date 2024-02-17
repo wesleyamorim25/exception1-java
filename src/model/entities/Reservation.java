@@ -17,7 +17,7 @@ public class Reservation {
 	public Reservation() {
 	}
 
-	public Reservation(Integer roomNumber, Date checkIn, Date checkOut) throws DomainException {
+	public Reservation(Integer roomNumber, Date checkIn, Date checkOut) {
 		if (!checkOut.after(checkIn)) {
 			throw new DomainException("Error in reservation: check-out date must be after check-in date");
 		}
